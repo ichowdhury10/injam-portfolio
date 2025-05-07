@@ -2,7 +2,7 @@
 
 Welcome to my personal developer portfolio! This site showcases who I am, my technical skills, and the projects I’ve built as a frontend-focused software engineer with a growing background in machine learning.
 
-🔗 **Live Website:** [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)  
+🔗 **Live Website:** [https://injam-portfolio.vercel.app](https://injam-portfolio.vercel.app)
 📬 **Contact Me:** ichowdhury10@fordham.edu  
 💼 **LinkedIn:** [linkedin.com/in/injam-chowdhury](https://linkedin.com/in/injam-chowdhury)  
 📁 **GitHub:** [github.com/ichowdhury10](https://github.com/ichowdhury10)
