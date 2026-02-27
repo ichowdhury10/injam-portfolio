@@ -5,8 +5,8 @@ const projects = [
     title: 'RAG-Powered Knowledge Assistant',
     description:
       'End-to-end Retrieval-Augmented Generation system that ingests PDF documents, chunks and embeds content into a ChromaDB vector store, and serves context-aware answers via a FastAPI endpoint. Containerized with Docker and deployed on Render with a Streamlit frontend.',
-    tech: ['Python', 'LangChain', 'OpenAI API', 'ChromaDB', 'FastAPI', 'Docker'],
-    github: '',
+    tech: ['Python', 'LangChain', 'ChromaDB', 'Ollama', 'Streamlit', 'Docker'],
+    github: 'https://github.com/ichowdhury10/-rag-knowledge-assistant',
     demo: '',
   },
   {
