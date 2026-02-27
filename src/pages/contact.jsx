@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <section className="hero-section">
+    <section className="page-section">
       <div className="hero-content">
         <div className="hero-flex">
           {/* Left Side - Text and Buttons */}
@@ -15,12 +15,10 @@ const Contact = () => {
               opportunities to be part of your team. Feel free to reach out.
             </p>
 
-            <div className="hero-buttons mt-6">
+            <div className="hero-buttons" style={{ marginTop: '1.5rem' }}>
               <a
                 href="mailto:injamch@gmail.com"
                 className="hero-nav-btn"
-                target="_blank"
-                rel="noreferrer"
               >
                 Email Me
               </a>
@@ -42,9 +40,6 @@ const Contact = () => {
               </a>
             </div>
           </div>
-
-          {/* Right side: You can optionally add a visual, like a contact-themed illustration or avatar */}
-          <div></div>
         </div>
       </div>
     </section>

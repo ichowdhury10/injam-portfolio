@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import avatar from '../assets/PortfolioHS.png'
 import '../index.css'
@@ -15,24 +16,21 @@ const Home = () => {
             </h1>
 
             <p className="hero-subtitle">
-              Frontend Developer & M.S. student in Machine Learning at Stevens
-              Institute of Technology. I craft AI-powered, user-first websites
-              with modern tools.
+              AI/ML Engineer & Frontend Developer. M.S. in Machine Learning at
+              Stevens Institute of Technology. I build end-to-end AI systems and
+              user-first web experiences.
             </p>
 
             <div className="hero-buttons">
-              <a href="/projects">View My Projects ↓</a>
-              <div className="hero-buttons mt-6 flex flex-col gap-3">
-                <a href="/" className="hero-nav-btn">
-                  Home
-                </a>
-                <a href="/about" className="hero-nav-btn">
-                  About
-                </a>
-                <a href="/contact" className="hero-nav-btn">
-                  Contact
-                </a>
-              </div>
+              <Link to="/projects">View My Projects ↓</Link>
+              <a
+                href="/Injam_Chowdhury_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="hero-btn-outline"
+              >
+                View Resume
+              </a>
             </div>
 
             <div className="hero-icons">
@@ -50,18 +48,18 @@ const Home = () => {
               >
                 <FaLinkedin />
               </a>
-              <a href="mailto:ichowdhury10@fordham.edu">
+              <a href="mailto:injamch@gmail.com">
                 <FaEnvelope />
               </a>
             </div>
           </div>
 
           {/* Right: Avatar */}
-          <div className="text-center">
+          <div>
             <img
               src={avatar}
               alt="Injam Avatar"
-              className="hero-avatar mx-auto"
+              className="hero-avatar"
             />
           </div>
         </div>

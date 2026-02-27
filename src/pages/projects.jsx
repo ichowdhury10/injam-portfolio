@@ -2,18 +2,34 @@ import React from 'react'
 
 const projects = [
   {
+    title: 'RAG-Powered Knowledge Assistant',
+    description:
+      'End-to-end Retrieval-Augmented Generation system that ingests PDF documents, chunks and embeds content into a ChromaDB vector store, and serves context-aware answers via a FastAPI endpoint. Containerized with Docker and deployed on Render with a Streamlit frontend.',
+    tech: ['Python', 'LangChain', 'OpenAI API', 'ChromaDB', 'FastAPI', 'Docker'],
+    github: '',
+    demo: '',
+  },
+  {
+    title: 'Autonomous Research Agent',
+    description:
+      'Multi-step AI agent capable of web search, summarization, and structured report generation using LangChain\'s agent framework. Features a ReAct-style reasoning loop with memory persistence across sessions. Evaluated across a custom benchmark of 50 research queries.',
+    tech: ['Python', 'LangChain', 'OpenAI API', 'SerpAPI'],
+    github: '',
+    demo: '',
+  },
+  {
     title: 'LinkHub Forum App',
     description:
-      'A full-stack forum web app where users can post links, comment, and upvote.',
-    tech: ['React.js', 'Tailwind CSS', 'JSON Server'],
+      'Full-stack community forum with user authentication, post creation, threaded commenting, and upvoting. React frontend with a RESTful Node.js/Express backend connected to PostgreSQL. Deployed via Vercel with CI/CD through GitHub Actions.',
+    tech: ['React.js', 'Node.js', 'PostgreSQL', 'Express', 'REST API'],
     github: 'https://github.com/ichowdhury10/Codepath-Final-Project',
     demo: '',
   },
   {
     title: 'Airbnb NYC Analysis',
     description:
-      'Data exploration project analyzing patterns and trends in NYC Airbnb listings using Python.',
-    tech: ['Pandas', 'Matplotlib', 'Seaborn'],
+      'Exploratory data analysis of 48,000+ NYC Airbnb listings uncovering pricing patterns, neighborhood trends, and host behavior. Includes statistical summaries, correlation analysis, and a suite of visualizations.',
+    tech: ['Python', 'Pandas', 'Matplotlib', 'Seaborn'],
     github: 'https://github.com/ichowdhury10/airbnb-nyc-analysis',
     demo: '',
   },
@@ -21,7 +37,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="hero-section">
+    <section className="page-section">
       <div className="hero-content">
         <h1 className="hero-title">
           My <span style={{ color: '#3b82f6' }}>Projects</span>
