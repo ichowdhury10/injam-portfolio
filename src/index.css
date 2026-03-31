@@ -349,6 +349,54 @@ ul {
   background-color: #dbeafe;
 }
 
+/* === Project Card Header === */
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card-header h3 {
+  margin-bottom: 0;
+}
+
+.project-status-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-deployed {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.badge-progress {
+  background-color: #fef9c3;
+  color: #a16207;
+}
+
+.badge-complete {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.project-purpose {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  margin-bottom: 0.5rem !important;
+  font-style: italic;
+}
+
 /* === Project Section === */
 .project-grid {
   margin-top: 3rem;

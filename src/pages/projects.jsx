@@ -3,35 +3,33 @@ import React from 'react'
 const projects = [
   {
     title: 'RAG-Powered Knowledge Assistant',
+    purpose: 'Ask questions against your own documents — no hallucinations, with citations.',
     description:
-      'End-to-end Retrieval-Augmented Generation system that ingests PDF documents, chunks and embeds content into a ChromaDB vector store, and serves context-aware answers via a FastAPI endpoint. Containerized with Docker and deployed on Render with a Streamlit frontend.',
-    tech: ['Python', 'LangChain', 'ChromaDB', 'Ollama', 'Streamlit', 'Docker'],
+      'Large document collections are impossible to query accurately with a standard LLM. This system solves that by ingesting PDFs into a ChromaDB vector store, retrieving the most relevant chunks via semantic search, and grounding every answer in source context. Built a FastAPI backend to serve queries and a Streamlit frontend for interaction — fully containerized with Docker and deployed on Render.',
+    tech: ['Python', 'LangChain', 'ChromaDB', 'Ollama', 'FastAPI', 'Streamlit', 'Docker'],
     github: 'https://github.com/ichowdhury10/-rag-knowledge-assistant',
     demo: '',
+    status: 'Deployed on Render',
   },
   {
     title: 'Autonomous Research Agent',
+    purpose: 'Automate multi-step research tasks that would take a human hours.',
     description:
-      'Multi-step AI agent capable of web search, summarization, and structured report generation using LangChain\'s agent framework. Features a ReAct-style reasoning loop with memory persistence across sessions. Evaluated across a custom benchmark of 50 research queries.',
+      'Manual research workflows require context-switching between search, reading, and synthesis. This agent automates the entire loop: it issues web searches, reads and summarizes sources, and produces a structured report — all in one run. Built on LangChain\'s ReAct framework with memory persistence across sessions, evaluated against a custom benchmark of 50 research queries to validate output quality.',
     tech: ['Python', 'LangChain', 'OpenAI API', 'SerpAPI'],
     github: '',
     demo: '',
+    status: 'In Progress',
   },
   {
     title: 'LinkHub Forum App',
+    purpose: 'A full-stack community platform built to production standards.',
     description:
-      'Full-stack community forum with user authentication, post creation, threaded commenting, and upvoting. React frontend with a RESTful Node.js/Express backend connected to PostgreSQL. Deployed via Vercel with CI/CD through GitHub Actions.',
-    tech: ['React.js', 'Node.js', 'PostgreSQL', 'Express', 'REST API'],
+      'Built to demonstrate end-to-end full-stack engineering — not a tutorial clone. Features user authentication, post creation, Markdown formatting with live preview, threaded commenting, and upvoting. React frontend backed by Supabase (PostgreSQL + Auth), with Row Level Security enforcing authorization at the database level. Deployed on Vercel.',
+    tech: ['React.js', 'Supabase', 'PostgreSQL', 'Vite', 'React Router'],
     github: 'https://github.com/ichowdhury10/Codepath-Final-Project',
     demo: '',
-  },
-  {
-    title: 'Airbnb NYC Analysis',
-    description:
-      'Exploratory data analysis of 48,000+ NYC Airbnb listings uncovering pricing patterns, neighborhood trends, and host behavior. Includes statistical summaries, correlation analysis, and a suite of visualizations.',
-    tech: ['Python', 'Pandas', 'Matplotlib', 'Seaborn'],
-    github: 'https://github.com/ichowdhury10/airbnb-nyc-analysis',
-    demo: '',
+    status: 'Deployed',
   },
 ]
 
@@ -45,7 +43,15 @@ const Projects = () => {
         <div className="project-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
-              <h3>{project.title}</h3>
+              <div className="project-card-header">
+                <h3>{project.title}</h3>
+                {project.status && (
+                  <span className={`project-status-badge ${project.status === 'In Progress' ? 'badge-progress' : project.status === 'Deployed' || project.status === 'Deployed on Render' ? 'badge-deployed' : 'badge-complete'}`}>
+                    {project.status}
+                  </span>
+                )}
+              </div>
+              <p className="project-purpose">{project.purpose}</p>
               <p>{project.description}</p>
               <ul className="tech-list">
                 {project.tech.map((tool, i) => (

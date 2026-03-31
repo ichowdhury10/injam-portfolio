@@ -2,9 +2,10 @@ import React from 'react'
 
 const techStack = {
   'AI & LLM': ['LangChain', 'OpenAI API', 'LlamaIndex', 'Hugging Face', 'Ollama'],
-  'ML & Data': ['Scikit-Learn', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter'],
+  'ML & Data': ['PyTorch', 'Scikit-Learn', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter'],
   'Frontend': ['React.js', 'JavaScript', 'HTML / CSS'],
   'Backend & Infra': ['Node.js', 'FastAPI', 'Docker', 'PostgreSQL', 'ChromaDB'],
+  'Cloud & DevOps': ['AWS', 'Vercel', 'Render', 'GitHub Actions'],
 }
 
 const experience = [

@@ -16,9 +16,9 @@ const Home = () => {
             </h1>
 
             <p className="hero-subtitle">
-              AI/ML Engineer & Frontend Developer. M.S. in Machine Learning at
-              Stevens Institute of Technology. I build end-to-end AI systems and
-              user-first web experiences.
+              AI Engineer focused on RAG systems, LLM applications, and full-stack deployment.
+              M.S. in Machine Learning at Stevens Institute of Technology.
+              I build end-to-end AI systems that go beyond notebooks — from ingestion pipelines to deployed APIs.
             </p>
 
             <div className="hero-buttons">
