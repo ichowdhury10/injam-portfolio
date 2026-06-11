@@ -2,14 +2,14 @@ import React from 'react'
 
 const projects = [
   {
-    title: 'RAG-Powered Knowledge Assistant',
-    purpose: 'Ask questions against your own documents — no hallucinations, with citations.',
+    title: 'RAG Knowledge Assistant — Stevens Unofficial Guide',
+    purpose: 'Ask plain-language questions about Stevens CS professors, grounded in real student reviews.',
     description:
-      'Large document collections are impossible to query accurately with a standard LLM. This system solves that by ingesting PDFs into a ChromaDB vector store, retrieving the most relevant chunks via semantic search, and grounding every answer in source context. Built a FastAPI backend to serve queries and a Streamlit frontend for interaction — fully containerized with Docker and deployed on Render.',
-    tech: ['Python', 'LangChain', 'ChromaDB', 'Ollama', 'FastAPI', 'Streamlit', 'Docker'],
-    github: 'https://github.com/ichowdhury10/-rag-knowledge-assistant',
+      'Student knowledge about professors lives on Rate My Professors and Reddit — fragmented and hard to search. This system ingests 12 professor review documents into ChromaDB, retrieves the most relevant passages via semantic search, and generates grounded answers with source citations. Built a FastAPI backend with SSE streaming and a Next.js 14 frontend with a real-time source drawer — fully containerized with Docker.',
+    tech: ['Python', 'FastAPI', 'LangChain', 'ChromaDB', 'Groq', 'Next.js', 'TypeScript', 'Docker'],
+    github: 'https://github.com/ichowdhury10/rag-knowledge-assistant-Stevens-',
     demo: '',
-    status: 'Deployed on Render',
+    status: 'Complete',
   },
   {
     title: 'Autonomous Research Agent',
