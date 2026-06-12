@@ -58,7 +58,7 @@ const About = () => {
               <ul className="section-list">
                 <li>
                   🎓 <strong>Stevens Institute of Technology</strong> — M.S. in
-                  Machine Learning (Expected Spring 2027) · GPA: 3.35
+                  Machine Learning (Expected Spring 2027) · GPA: 3.5
                 </li>
                 <li>
                   📚 <strong>Fordham University</strong> — B.S. in Computer
