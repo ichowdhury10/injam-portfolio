@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import Home from './pages/home'
 import About from './pages/about'
 import Projects from './pages/projects'
@@ -52,6 +52,9 @@ const App = () => {
             </a>
             <a href="https://linkedin.com/in/injam-chowdhury" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
+            </a>
+            <a href="mailto:injamch@gmail.com" aria-label="Email">
+              <FaEnvelope />
             </a>
           </div>
         </div>

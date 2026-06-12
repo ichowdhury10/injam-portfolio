@@ -16,9 +16,10 @@ const Home = () => {
             </h1>
 
             <p className="hero-subtitle">
-              AI Engineer focused on RAG systems, LLM applications, and full-stack deployment.
-              M.S. in Machine Learning at Stevens Institute of Technology.
-              I build end-to-end AI systems that go beyond notebooks — from ingestion pipelines to deployed APIs.
+              I build generative AI applications and full-stack systems that go beyond
+              notebooks — from RAG pipelines and LLM agents to the deployed APIs and
+              interfaces that bring them to life. Currently pursuing an M.S. in Machine
+              Learning at Stevens Institute of Technology.
             </p>
 
             <div className="hero-buttons">
