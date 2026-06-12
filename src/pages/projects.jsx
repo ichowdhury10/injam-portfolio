@@ -12,14 +12,14 @@ const projects = [
     status: 'Complete',
   },
   {
-    title: 'Autonomous Research Agent',
-    purpose: 'Automate multi-step research workflows with an LLM-powered agent.',
+    title: 'Job Research Agent',
+    purpose: 'Give it a company and role — it searches the web and writes you a structured prep report.',
     description:
-      'Research workflows require constant context-switching between searching, reading, and writing. This agent runs the full loop autonomously: issuing web searches, reading and summarizing sources, and producing a structured report in one pass. Built on LangChain\'s ReAct framework with memory persistence across sessions.',
-    tech: ['Python', 'LangChain', 'OpenAI API', 'SerpAPI'],
-    github: '',
+      'Job research means tab-switching between Glassdoor, LinkedIn, and Reddit with nothing to show for it. This agent runs the full loop autonomously: a LangGraph researcher node issues targeted Tavily web searches, reasons over results, and hands off to a separate synthesizer node that writes a structured report covering company overview, role details, interview prep, culture, and key talking points. Built with a two-node stateful graph and a Streamlit UI.',
+    tech: ['Python', 'LangGraph', 'LangChain', 'Groq', 'Tavily', 'Streamlit'],
+    github: 'https://github.com/ichowdhury10/job-research-agent',
     demo: '',
-    status: 'In Progress',
+    status: 'Complete',
   },
   {
     title: 'LinkHub Forum App',
