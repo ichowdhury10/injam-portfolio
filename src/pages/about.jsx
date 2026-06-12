@@ -1,9 +1,9 @@
 import React from 'react'
 
 const techStack = {
-  'AI & LLM': ['LangChain', 'OpenAI API', 'LlamaIndex', 'Hugging Face', 'Ollama'],
+  'AI & LLM': ['LangChain', 'OpenAI API', 'Groq', 'LlamaIndex', 'Hugging Face', 'Ollama'],
   'ML & Data': ['PyTorch', 'Scikit-Learn', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter'],
-  'Frontend': ['React.js', 'JavaScript', 'HTML / CSS'],
+  'Frontend': ['React.js', 'Next.js', 'TypeScript', 'JavaScript', 'HTML / CSS'],
   'Backend & Infra': ['Node.js', 'FastAPI', 'Docker', 'PostgreSQL', 'ChromaDB'],
   'Cloud & DevOps': ['AWS', 'Vercel', 'Render', 'GitHub Actions'],
 }
@@ -12,20 +12,21 @@ const experience = [
   {
     org: 'CodePath',
     role: 'Applied AI Engineering Fellow',
-    period: 'Feb 2026 – Present',
+    period: 'Feb 2026 – May 2026',
     bullets: [
-      'Intensive curriculum covering LLM integration, RAG pipelines, prompt engineering, and AI agent design with LangChain and the OpenAI API.',
-      'Building and deploying end-to-end AI applications with a focus on responsible AI and production-ready system design.',
+      'Completed an intensive fellowship covering generative AI application development, RAG pipelines, prompt engineering, and AI agent design using LangChain and the OpenAI API.',
+      'Built and deployed end-to-end AI systems with an emphasis on production-ready architecture and responsible AI practices.',
+      'Enrolled in Applications of AI Engineering — Summer 2026',
     ],
   },
   {
     org: 'Madison Square Garden Entertainment',
     role: 'Front-End Engineer Intern',
-    period: 'Jun 2022 – Aug 2022',
+    period: 'June 2023 – Aug 2023',
     bullets: [
       'Built and optimized data-driven React components, improving user interaction tracking, responsiveness, and load performance.',
       'Refactored legacy code into reusable components and integrated RESTful APIs for real-time content delivery.',
-      'Collaborated with senior engineers in an Agile/Scrum environment — sprint planning, code reviews, and daily stand-ups.',
+      'Collaborated with senior engineers in an Agile/Scrum environment across sprint planning, code reviews, and daily stand-ups.',
     ],
   },
 ]
@@ -35,17 +36,20 @@ const About = () => {
     <section className="page-section">
       <div className="hero-content">
         <div className="hero-flex">
-          {/* Left: Bio + Education + Experience + Activities */}
+          {/* Left: Bio + Education + Experience + Certifications */}
           <div>
             <h1 className="hero-title">
               About <span style={{ color: '#3b82f6' }}>Me</span>
             </h1>
 
             <p className="hero-subtitle">
-              I'm an AI/ML engineer and frontend developer passionate about
-              building intelligent, user-first applications. I earned my B.S. in
-              Computer Science from Fordham University and am currently pursuing
-              an M.S. in Machine Learning at Stevens Institute of Technology.
+              I'm an AI/ML engineer and full-stack developer focused on building
+              intelligent, production-ready applications. I hold a B.S. in Computer
+              Science from Fordham University and am completing an M.S. in Machine
+              Learning at Stevens Institute of Technology. My work sits at the
+              intersection of generative AI, retrieval systems, and clean user
+              experience — from RAG pipelines and LLM-powered agents to the
+              full-stack applications that bring them to life.
             </p>
 
             {/* Education */}
@@ -82,11 +86,31 @@ const About = () => {
               ))}
             </div>
 
-            {/* Activities */}
+            {/* Licenses & Certifications */}
             <div style={{ marginTop: '2rem' }}>
-              <h3>Activities</h3>
+              <h3>Licenses &amp; Certifications</h3>
               <ul className="section-list">
-                <li>🧠 Member of the Fordham Computer Science Society</li>
+                <li>
+                  <strong>Python for Data Science, AI &amp; Development</strong>
+                  <br />
+                  IBM · Coursera &nbsp;·&nbsp; Issued May 2024
+                  <br />
+                  <span style={{ fontSize: '0.85em', opacity: 0.7 }}>Python, NumPy, Pandas</span>
+                </li>
+                <li>
+                  <strong>Data Science Math Skills</strong>
+                  <br />
+                  Duke University · Coursera &nbsp;·&nbsp; Issued May 2024
+                  <br />
+                  <span style={{ fontSize: '0.85em', opacity: 0.7 }}>Statistics</span>
+                </li>
+                <li>
+                  <strong>Generative AI with AWS Bedrock</strong>
+                  <br />
+                  Amazon Web Services · Coursera &nbsp;·&nbsp; In Progress
+                  <br />
+                  <span style={{ fontSize: '0.85em', opacity: 0.7 }}>AWS, Generative AI</span>
+                </li>
               </ul>
             </div>
           </div>
